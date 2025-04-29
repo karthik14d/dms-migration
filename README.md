@@ -65,12 +65,3 @@ aws-dms-ec2-to-rds-migration/
 Karthik Dharmaraju
 Cloud Enthusiast | Senior Database SME | AWS Certified Solutions Architect – Associate
 
-## Related Files in This Project
-- migration_steps/ec2_postgresql_setup.md → EC2 PostgreSQL server setup steps
-- migration_steps/postgresql_configuration.md → External access configuration for PostgreSQL
-- migration_steps/dms_endpoints_setup.md → AWS DMS endpoints creation guide
-- migration_steps/dms_migration_task.md → DMS Migration Task creation and execution
-- migration_steps/troubleshooting_encountered.md → Troubleshooting real-world DMS errors
-- migration_steps/final_validation_steps.md → Data validation queries and methods
-- cheat_sheets/aws_dms_commands_cheat_sheet.md → Important PostgreSQL + DMS commands
-- cheat_sheets/dms_troubleshooting_checklist.md → Quick troubleshooting guide for DMS migrations
