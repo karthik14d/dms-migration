@@ -1,0 +1,22 @@
+# EC2 PostgreSQL Setup
+
+## Launch EC2 Instance
+- OS: Amazon Linux 2023
+- Instance Type: t3.micro
+- Open Port 5432 in Security Group
+
+## Install PostgreSQL 15
+
+- sudo dnf install postgresql15-server postgresql15 -y
+- sudo /usr/bin/initdb --auth=md5 -D /var/lib/pgsql/data
+- sudo systemctl start postgresql
+- sudo systemctl enable PostgreSQL
+
+## Validate PostgreSQL service
+
+- sudo systemctl status PostgreSQL
+
+## Connect to EC2 instance and become postgres user
+
+- ssh -i your-key.pem ec2-user@<your-ec2-public-ip>
+- sudo su - postgres

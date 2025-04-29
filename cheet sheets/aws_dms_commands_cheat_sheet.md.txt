@@ -1,0 +1,20 @@
+# AWS DMS Commands Cheat Sheet
+
+## PostgreSQL Configuration
+
+sudo nano /var/lib/pgsql/data/postgresql.conf
+sudo nano /var/lib/pgsql/data/pg_hba.conf
+
+## Database Commands
+
+CREATE DATABASE sampledb;
+CREATE USER dmsuser WITH PASSWORD 'xxxxxxx';
+GRANT USAGE ON SCHEMA public TO dmsuser;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO dmsuser;
+
+## Migration Key Steps
+
+Create Source and Target Endpoints
+Create Migration Task
+Validate Data
+

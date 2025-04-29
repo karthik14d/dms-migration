@@ -1,0 +1,18 @@
+
+# PostgreSQL Configuration for External Access
+## Edit postgresql.conf
+- sudo nano /var/lib/pgsql/data/postgresql.conf
+- Change:
+   - listen_addresses = '*'
+
+## Edit pg_hba.conf
+- sudo nano /var/lib/pgsql/data/pg_hba.conf
+- Add: 
+   - host    all    all    0.0.0.0/0    md5
+
+## Restart PostgreSQL
+- sudo systemctl restart postgresql
+
+
+
+

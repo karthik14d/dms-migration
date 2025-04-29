@@ -1,0 +1,14 @@
+
+# AWS DMS Endpoint Setup
+
+## Source Endpoint (EC2 PostgreSQL)
+- Engine: PostgreSQL
+- Server IP: <EC2 Public IP>
+- SSL Mode: None
+- Test Connection: Successful
+
+## Target Endpoint (RDS PostgreSQL)
+- Engine: PostgreSQL
+- Server: <RDS Endpoint>
+- SSL Mode: Require
+- Test Connection: Successful

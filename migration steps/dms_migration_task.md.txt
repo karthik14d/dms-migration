@@ -1,0 +1,17 @@
+# AWS DMS Migration Task
+
+## Task Details
+- Migration Type: Migrate existing data only
+- Table Mapping:
+  - Schema: public
+  - Tables: %
+- Start on Create: Enabled
+- Validation: Enabled
+
+## Observations
+- Full Load completed successfully.
+- Data validation matched source row counts.
+
+## Connect to RDS PostgreSQL for validation
+
+-psql -h <your-rds-endpoint> -U postgres -d sampledbrds -p 5432

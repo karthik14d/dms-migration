@@ -1,0 +1,12 @@
+
+## cheat_sheets/dms_troubleshooting_checklist.md
+
+# DMS Troubleshooting Checklist
+
+| Issue | Solution |
+| Endpoint Connection Failure | Verify Security Groups, Ports, listen_addresses |
+| Table Load Error | Check Source Permissions (SELECT) |
+| SSL Errors | Set SSL Mode to 'require' |
+| Task Stuck at 0% | Validate Source Table Visibility |
+
+Always check Table Statistics and CloudWatch Logs.
